@@ -1,2 +1,4 @@
-# basic-express-boilerplate
-Basic express boilerplate to use as a server for example projects.
+# Whoami-api
+Api to get basic user's data.
+
+
