@@ -16,9 +16,10 @@ a{
 
 body{
   background: var(--bg-color);
+  font-family: 'Archivo Narrow', sans-serif;
 }
 img{
-  width: 200px;
+  width: 80%;
 }
 
 .header{
@@ -45,13 +46,14 @@ img{
 
 .container__card{
   font-size: 0.9rem;
-  background: skyblue;
+  background:var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   border-radius: 10px;
+  line-height: 1.1rem;
 }
 
 .container__button{
@@ -96,7 +98,7 @@ img{
 
 @media only screen and (min-device-width: 426px){
 
-  .container__card{
-    margin-top: 1.5rem;
+  img{
+    max-width: 300px;
   }
 }
