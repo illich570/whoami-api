@@ -1,3 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+
+:root{
+  --bg-color: #ffffff;
+  --primary-color: #FF9B41;
+  --primary-color-hover: rgb(190, 106, 31);
+}
+
 body{
-  background: red;
+  background: var(--bg-color);
+}
+img{
+  width: 200px;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+}
+
+.container__info{
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.container__card{
+  font-size: 0.9rem;
+  background: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.container__button{
+  border: none;
+  margin: 0.6rem;
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 5px #999;
+  transition: all 0.2s;
+}
+
+.container__button:hover{
+  background-color: var(--primary-color-hover);
+  color: white;
+}
+
+.container__button:active{
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+
+.fab{
+  margin: 0.5rem;
+  color: var(--primary-color);
+}
+
+.fab:hover{
+  color: var(--primary-color-hover);
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media only screen and (min-device-width: 426px){
+
+  .container__card{
+    margin-top: 1.5rem;
+  }
 }

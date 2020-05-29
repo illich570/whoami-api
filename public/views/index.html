@@ -4,12 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/index.css">
-  <title>Boilerplate</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <script src="https://kit.fontawesome.com/35e9411073.js" crossorigin="anonymous"></script>
+  <title>WhoAmI?</title>
 </head>
 <body>
-  <h1>Hi, i'm a simple Express boilerplate</h1>
-  <button id="button"> clickeame</button>
-  <p id="prueba">no soy una prueba</p>
+  <header class="header">
+    <h1>Who am I?</h1>
+  </header>
+  <main class="container" role="main">
+    <img src="/assets/laptop-image.svg">
+    <p class="container__info"> API desarollada para unos de los ejercicios de FreeCodeCamp,
+      Permite ver informacion del usuario que hace una petición, haz la prueba!
+    </p>
+    <button class="container__button" id="button">Click me!</button>
+    <div class="container__card" id="result">
+        <p> Aqui se mostraran los datos</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <span>WhoAmI? made by @IllichR</span>
+    <div class="footer__icons">
+      <a href="https://www.freecodecamp.org/illich570" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-free-code-camp fa-2x"></i>
+      </a>
+      <a href="https://www.codepen.io/illich570" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-codepen fa-2x"></i>
+      </a>
+      <a href="https://www.github.com/illich570" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.twitter.com/illichr" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+    </div>
+  </footer>
   <script src="/js/index.js"></script>
 </body>
 </html>
